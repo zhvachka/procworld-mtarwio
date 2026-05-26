@@ -1,0 +1,16 @@
+<meta>
+    <info author="zhvachka" name="Procedural World" version="1.1.0" type="script" />
+    <min_mta_version client="1.6.0-9.22470"></min_mta_version>
+
+    <include resource="mtarwio" />
+
+    <script src="config.lua"     type="client" cache="false" />
+    <script src="perlin.lua"     type="client" cache="false" />
+    <script src="biome.lua"      type="client" cache="false" />
+    <script src="texture.lua"    type="client" cache="false" />
+    <script src="chunk.lua"      type="client" cache="false" />
+    <script src="vegetation.lua" type="client" cache="false" />
+    <script src="world.lua"      type="client" cache="false" />
+
+    <script src="example.lua"        type="client" cache="false" />
+</meta>

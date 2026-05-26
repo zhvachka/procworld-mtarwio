@@ -1,0 +1,23 @@
+<meta>
+	<info author="thisdp, zhvachka" name="MTA Lua RW Loader/Editor" />
+	<script src="classlib.lua" type="client" />
+	<script src="utils.lua" type="client" />
+	<script src="IMGLoader.lua" type="client" />
+	<script src="2DFX.lua" type="client" />
+	<script src="DDSMipmaps.lua" type="client" />
+	<script src="TXDStructure.lua" type="client" />
+	<script src="DFFStructure.lua" type="client" />
+	<script src="COLStructure.lua" type="client" />
+	<script src="BMP.lua" type="client" />
+	<script src="bridge.lua" type="client" />
+
+	<export function="buildMergedShell" type="client" />
+	<export function="buildBoxDff" type="client" />
+	<export function="buildBoxShell" type="client" />
+	<export function="buildMesh" type="client" />
+	<export function="buildShell" type="client" />
+	<export function="buildStubTxd" type="client" />
+	<export function="buildTxd"     type="client" />
+	
+	<oop>true</oop>
+</meta>
