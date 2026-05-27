@@ -164,7 +164,7 @@ local function deployMesh(spec, worldX, worldY, worldZ, withCol, isLowLOD)
         engineSetModelLODDistance(modelId, CONFIG.modelLODDistance or 6000, true)
     end
 
-    local obj = createObject(modelId, worldX, worldY, worldZ, 0, 0, 0, isLowLOD and true or false)
+    local obj = createBuilding(modelId, worldX, worldY, worldZ, 0, 0, 0)
     if not obj then
         releaseModel(modelId)
         if isElement(dff) then destroyElement(dff) end
@@ -172,7 +172,7 @@ local function deployMesh(spec, worldX, worldY, worldZ, withCol, isLowLOD)
         return nil
     end
 
-    setElementDimension(obj, CONFIG.worldDimension or 0)
+    --[[setElementDimension(obj, CONFIG.worldDimension or 0)
     setElementInterior(obj, CONFIG.worldInterior or 0)
     setElementDoubleSided(obj, true)
 
@@ -182,7 +182,7 @@ local function deployMesh(spec, worldX, worldY, worldZ, withCol, isLowLOD)
     end
 
     -- Повторяем engineReplaceCOL после createObject — известная задержка применения COL.
-    if col then engineReplaceCOL(col, modelId) end
+    if col then engineReplaceCOL(col, modelId) end]]
 
     return { object = obj, dff = dff, col = col, modelId = modelId }
 end

@@ -11,7 +11,7 @@ PROCWORLD_CONFIG = {
 
     -- LOD
     lodEnabled       = true,
-    lodResolution    = 24,
+    lodResolution    = 8,
     lodDistance      = 6000,
     modelLODDistance = 6000,
 
